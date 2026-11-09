@@ -4,9 +4,9 @@ TODO: error message for when an author is not found
 find the todos i left in the code
 
 ## Running it
+Read the provided README: `SEG3502_Lab7_Starter/README.md`
 This means the run intructions will be different than usually in the report.
 
-Read the provided README: `SEG3502_Lab7_Starter/README.md`
 
 ## Swagger
 
