@@ -1,4 +1,6 @@
-<!-- TODO: show a "can't find the requested author" message when there is no selectedAuthor using ngIf just like in book.compoenent.html -->
+<div *ngIf="!selectedAuthor">
+  <h2>Sorry can't find the requested author...</h2>
+</div>
 <div *ngIf="selectedAuthor">
   <h2>Here are details of the Author {{selectedAuthor.id}}</h2>
   <div class="row">
