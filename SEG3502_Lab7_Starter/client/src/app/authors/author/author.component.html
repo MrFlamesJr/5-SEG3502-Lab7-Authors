@@ -1,0 +1,16 @@
+<!-- TODO: show a "can't find the requested author" message when there is no selectedAuthor using ngIf just like in book.compoenent.html -->
+<div *ngIf="selectedAuthor">
+  <h2>Here are details of the Author {{selectedAuthor.id}}</h2>
+  <div class="row">
+    <div class="col-3">First Name:</div>
+    <div class="col-9">{{ selectedAuthor.firstName }}</div>
+  </div>
+  <div class="row">
+    <div class="col-3">Last Name:</div>
+    <div class="col-9">{{ selectedAuthor.lastName }}</div>
+  </div>
+  <div class="row" [hidden]="!selectedAuthor.books">
+    <div class="col-3">Books:</div>
+    <div class="col-9"><div *ngFor="let book of selectedAuthor.books">{{ book.title }}</div></div>
+  </div>
+</div>
