@@ -25,7 +25,9 @@ export class AuthorComponent implements OnInit, OnDestroy {
         next: (data: Author) => {
           this.selectedAuthor = data;
         },
-        // TODO: author not found error stuff here
+        error: (_: any) => {
+          this.selectedAuthor = null;
+        }
       });
     });
   }
